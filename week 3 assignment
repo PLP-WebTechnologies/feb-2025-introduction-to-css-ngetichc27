@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Advanced HTML5 Elements and Forms</h1>
+    
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ol>
+    
+    <h2>External Image</h2>
+    <img src="https://www.pexels.com/photo/sample-image.jpg" alt="Sample Image from Pexels" class="styled-image">
+    
+    <h2>Contacts Table</h2>
+    <table class="contact-table">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Street, City</td>
+            <td>+1234567890</td>
+            <td>john@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Avenue, City</td>
+            <td>+0987654321</td>
+            <td>jane@example.com</td>
+        </tr>
+        <tr>
+            <td>Bob Brown</td>
+            <td>789 Road, City</td>
+            <td>+1122334455</td>
+            <td>bob@example.com</td>
+        </tr>
+        <tr>
+            <td>Alice White</td>
+            <td>321 Lane, City</td>
+            <td>+2233445566</td>
+            <td>alice@example.com</td>
+        </tr>
+        <tr>
+            <td>Tom Black</td>
+            <td>654 Boulevard, City</td>
+            <td>+3344556677</td>
+            <td>tom@example.com</td>
+        </tr>
+    </table>
+    
+    <h2>Registration Form</h2>
+    <form action="#" method="POST" class="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        <br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password">
+        <br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        
+        <label>Subscription Type:</label>
+        <input type="radio" name="subscription" value="free" checked> Free
+        <input type="radio" name="subscription" value="premium"> Premium
+        <br>
+        
+        <label>Preferences:</label>
+        <input type="checkbox" name="updates" value="yes"> Receive Updates
+        <input type="checkbox" name="terms" value="agree" required> Agree to Terms
+        <br>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+.styled-image {
+    width: 500px;
+    border: 2px solid #333;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contact-table th, .contact-table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+.registration-form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
